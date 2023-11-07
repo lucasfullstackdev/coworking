@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { DataSource } from 'typeorm';
 import { RoomEntity } from './room.entity';
-// import { RoomDto } from './dtos/room.dto';
 import { RoomCreateDto } from './dtos/roomCreate.dto';
 import { RoomUpdateDto } from './dtos/roomUpdate.dto';
 
@@ -10,14 +9,17 @@ export class RoomsRepository {
   constructor(private readonly dataSource: DataSource) {}
 
   async getRooms(): Promise<RoomEntity[]> {
-    return await this.dataSource.getRepository(RoomEntity).find();
+    return await this.dataSource.getRepository(RoomEntity).find({
+      relations: ['coworking'],
+    });
   }
 
   async getRoom(id: string): Promise<RoomEntity> {
     return await this.dataSource.getRepository(RoomEntity).findOne({
       where: {
-        id,
+        id: id,
       },
+      relations: ['coworking'],
     });
   }
 

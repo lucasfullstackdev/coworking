@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-// import { RoomEntity } from './room.entity';
 import { RoomDto } from './dtos/room.dto';
 import { RoomCreateDto } from './dtos/roomCreate.dto';
 import { RoomUpdateDto } from './dtos/roomUpdate.dto';
@@ -21,7 +20,7 @@ export class RoomsService {
     return new RoomDto(room);
   }
 
-  async create(roomCreateDto: RoomCreateDto): Promise<RoomDto> {
+  async create(roomCreateDto: RoomCreateDto): Promise<any> {
     const room = await this.roomsRepository.create(roomCreateDto);
     return new RoomDto(room);
   }

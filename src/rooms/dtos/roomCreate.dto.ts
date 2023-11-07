@@ -8,4 +8,8 @@ export class RoomCreateDto {
   @IsNotEmpty()
   @IsNumber()
   readonly value: number;
+
+  @IsNotEmpty()
+  @IsString()
+  readonly coworking: string;
 }

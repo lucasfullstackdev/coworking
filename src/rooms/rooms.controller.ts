@@ -22,7 +22,7 @@ export class RoomsController {
   }
 
   @Get(':id')
-  findOne(@Param() id: string): Promise<RoomDto> {
+  findOne(@Param('id') id: string): Promise<RoomDto> {
     return this.roomsService.getRoom(id);
   }
 
