@@ -3,6 +3,12 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
+import { RoomsModule } from './rooms/rooms.module';
+import { CoworkingsModule } from './coworkings/coworkings.module';
+import { CoworkingEntity } from './coworkings/coworking.entity';
+import { RoomEntity } from './rooms/room.entity';
+import { CoworkingRoomModule } from './coworking-room/coworking-room.module';
+import { CoworkingRoomEntity } from './coworking-room/coworking-room.entity';
 
 @Module({
   imports: [
@@ -14,8 +20,11 @@ import { DataSource } from 'typeorm';
       password: 'root',
       database: 'coworking',
       synchronize: true,
-      entities: [],
+      entities: [CoworkingEntity, RoomEntity, CoworkingRoomEntity],
     }),
+    RoomsModule,
+    CoworkingsModule,
+    CoworkingRoomModule,
   ],
   controllers: [AppController],
   providers: [AppService],
