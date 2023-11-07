@@ -19,7 +19,6 @@ export class CoworkingRepository {
       where: {
         id: id,
       },
-      // relations: ['coworking'],
     });
   }
 
