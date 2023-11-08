@@ -11,7 +11,9 @@ import { RoomsService } from './rooms.service';
 import { RoomDto } from './dtos/room.dto';
 import { RoomCreateDto } from './dtos/roomCreate.dto';
 import { RoomUpdateDto } from './dtos/roomUpdate.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('rooms')
 @Controller('rooms')
 export class RoomsController {
   constructor(private readonly roomsService: RoomsService) {}

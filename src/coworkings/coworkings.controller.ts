@@ -10,7 +10,9 @@ import {
 import { CoworkingsService } from './coworkings.service';
 import { CoworkingCreateDto } from './dtos/coworkingCreate.dto';
 import { CoworkingUpdateDto } from './dtos/coworkingUpdate.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('coworkings')
 @Controller('coworkings')
 export class CoworkingController {
   constructor(private readonly coworkingService: CoworkingsService) {}

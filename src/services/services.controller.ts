@@ -11,7 +11,9 @@ import { ServiceDto } from './dtos/service.dto';
 import { ServicesService } from './services.service';
 import { ServiceCreateDto } from './dtos/serviceCreate.dto';
 import { ServiceUpdateDto } from './dtos/serviceUpdate.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('services')
 @Controller('services')
 export class ServicesController {
   constructor(private readonly servicesService: ServicesService) {}
