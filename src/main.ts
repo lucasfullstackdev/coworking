@@ -13,7 +13,11 @@ async function bootstrap() {
     .setDescription('The cats API description')
     .setVersion('1.0')
     .addTag('coworkings', 'Gerencie seu coworking')
-    .addTag('services', 'Gerencie os serviços prestados pelo seu coworking')
+    .addTag('services', 'Gerencie os disponíveis')
+    .addTag(
+      'coworkings-services',
+      'Gerencie os serviços prestados pelo seu coworking',
+    )
     .addTag('rooms', 'Gerencie as salas pertencentes ao seu coworking')
     .build();
   const document = SwaggerModule.createDocument(app, config);

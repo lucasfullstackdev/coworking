@@ -8,6 +8,8 @@ import { CoworkingEntity } from './coworkings/coworking.entity';
 import { RoomEntity } from './rooms/room.entity';
 import { ServicesModule } from './services/services.module';
 import { ServiceEntity } from './services/service.entity';
+import { CoworkingServicesModule } from './coworkings/services/coworking-services.module';
+import { CoworkingServiceEntity } from './coworkings/services/coworking-service.entity';
 
 @Module({
   imports: [
@@ -19,11 +21,17 @@ import { ServiceEntity } from './services/service.entity';
       password: 'root',
       database: 'coworking',
       synchronize: true,
-      entities: [CoworkingEntity, RoomEntity, ServiceEntity],
+      entities: [
+        CoworkingEntity,
+        RoomEntity,
+        ServiceEntity,
+        CoworkingServiceEntity,
+      ],
     }),
     RoomsModule,
     CoworkingsModule,
     ServicesModule,
+    CoworkingServicesModule,
   ],
   controllers: [],
   providers: [AppService],
