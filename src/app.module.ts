@@ -7,6 +7,8 @@ import { RoomsModule } from './rooms/rooms.module';
 import { CoworkingsModule } from './coworkings/coworkings.module';
 import { CoworkingEntity } from './coworkings/coworking.entity';
 import { RoomEntity } from './rooms/room.entity';
+import { ServicesModule } from './services/services.module';
+import { ServiceEntity } from './services/service.entity';
 
 @Module({
   imports: [
@@ -18,10 +20,11 @@ import { RoomEntity } from './rooms/room.entity';
       password: 'root',
       database: 'coworking',
       synchronize: true,
-      entities: [CoworkingEntity, RoomEntity],
+      entities: [CoworkingEntity, RoomEntity, ServiceEntity],
     }),
     RoomsModule,
     CoworkingsModule,
+    ServicesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
