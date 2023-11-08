@@ -22,7 +22,7 @@ export class RoomEntity {
   value: number;
 
   @ManyToOne(() => CoworkingEntity, (coworking) => coworking.id)
-  @JoinColumn({ name: 'coworking_id' })
+  @Column({ name: 'coworking_id' })
   coworking: string;
 
   @CreateDateColumn({

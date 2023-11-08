@@ -15,10 +15,13 @@ async function bootstrap() {
     .addTag('coworkings', 'Gerencie seu coworking')
     .addTag('services', 'Gerencie os disponíveis')
     .addTag(
-      'coworkings-services',
+      'Coworking Services',
       'Gerencie os serviços prestados pelo seu coworking',
     )
-    .addTag('rooms', 'Gerencie as salas pertencentes ao seu coworking')
+    .addTag(
+      'Coworking Rooms',
+      'Gerencie as salas pertencentes ao seu coworking',
+    )
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);

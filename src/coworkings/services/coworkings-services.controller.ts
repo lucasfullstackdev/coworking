@@ -1,18 +1,10 @@
-import {
-  Body,
-  Controller,
-  Delete,
-  Get,
-  Logger,
-  Param,
-  Post,
-} from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { CoworkingServicesService } from './coworking-services.service';
 import { CoworkingServiceDto } from './dtos/coworking-services.dto';
 import { CoworkingServiceCreateDto } from './dtos/coworking-services-create.dto';
 
-@ApiTags('coworkings-services')
+@ApiTags('Coworking Services')
 @Controller('coworkings/:coworking/services')
 export class CoworkingServicesController {
   constructor(

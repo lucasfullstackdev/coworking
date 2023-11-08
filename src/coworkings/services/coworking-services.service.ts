@@ -28,7 +28,7 @@ export class CoworkingServicesService {
     );
 
     if (coworkingService == null) {
-      throw new NotFoundException('------ Service not found');
+      throw new NotFoundException('Service not found');
     }
 
     return new CoworkingServiceDto(coworkingService);

@@ -8,16 +8,20 @@ import { RoomUpdateDto } from './dtos/roomUpdate.dto';
 export class RoomsRepository {
   constructor(private readonly dataSource: DataSource) {}
 
-  async getRooms(): Promise<RoomEntity[]> {
+  async getRooms(coworking: string): Promise<RoomEntity[]> {
     return await this.dataSource.getRepository(RoomEntity).find({
+      where: {
+        coworking: coworking,
+      },
       relations: ['coworking'],
     });
   }
 
-  async getRoom(id: string): Promise<RoomEntity> {
+  async getRoom(coworking: string, room): Promise<RoomEntity> {
     return await this.dataSource.getRepository(RoomEntity).findOne({
       where: {
-        id: id,
+        id: room,
+        coworking: coworking,
       },
       relations: ['coworking'],
     });
@@ -27,11 +31,13 @@ export class RoomsRepository {
     return await this.dataSource.getRepository(RoomEntity).save(roomCreateDto);
   }
 
-  async update(id: string, roomUpdateDto: RoomUpdateDto) {
-    return this.dataSource.getRepository(RoomEntity).update(id, roomUpdateDto);
+  async update(room: string, roomUpdateDto: RoomUpdateDto) {
+    return this.dataSource
+      .getRepository(RoomEntity)
+      .update(room, roomUpdateDto);
   }
 
-  async delete(id: string) {
-    return this.dataSource.getRepository(RoomEntity).delete(id);
+  async delete(room: string) {
+    return await this.dataSource.getRepository(RoomEntity).delete(room);
   }
 }
