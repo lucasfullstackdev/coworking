@@ -1,8 +1,6 @@
-import { Injectable, Logger, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { CoworkingServicesRepository } from './coworking-services.repository';
-// import { CoworkingServiceEntity } from './coworking-service.entity';
 import { CoworkingServiceDto } from './dtos/coworking-services.dto';
-import { CoworkingServiceEntity } from './coworking-service.entity';
 import { CoworkingServiceCreateDto } from './dtos/coworking-services-create.dto';
 
 @Injectable()

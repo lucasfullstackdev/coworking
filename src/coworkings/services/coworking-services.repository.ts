@@ -5,7 +5,7 @@ import { CoworkingServiceCreateDto } from './dtos/coworking-services-create.dto'
 
 @Injectable()
 export class CoworkingServicesRepository {
-  constructor(private readonly dataSource: DataSource) { }
+  constructor(private readonly dataSource: DataSource) {}
 
   async getServices(coworking: string): Promise<CoworkingServiceEntity[]> {
     return await this.dataSource.getRepository(CoworkingServiceEntity).find({

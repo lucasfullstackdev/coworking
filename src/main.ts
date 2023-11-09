@@ -9,11 +9,13 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const config = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API description')
+    .setTitle('API para gestão de coworkings')
+    .setDescription(
+      'Gerencie todos aspectos que envolvem um coworking de maneira simples, rápida e segura',
+    )
     .setVersion('1.0')
     .addTag('coworkings', 'Gerencie seu coworking')
-    .addTag('services', 'Gerencie os disponíveis')
+    .addTag('services', 'Gerencie os serviços disponíveis')
     .addTag(
       'Coworking Services',
       'Gerencie os serviços prestados pelo seu coworking',
