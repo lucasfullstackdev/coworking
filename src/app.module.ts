@@ -11,6 +11,8 @@ import { CoworkingServicesModule } from './coworkings/services/coworking-service
 import { CoworkingServiceEntity } from './coworkings/services/coworking-service.entity';
 import { CustomersModule } from './customers/customers.module';
 import { CustomerEntity } from './customers/customer.entity';
+import { SchedulesModule } from './schedules/schedules.module';
+import { ScheduleEntity } from './schedules/schedule.entity';
 
 @Module({
   imports: [
@@ -28,12 +30,14 @@ import { CustomerEntity } from './customers/customer.entity';
         ServiceEntity,
         CoworkingServiceEntity,
         CustomerEntity,
+        ScheduleEntity,
       ],
     }),
     CoworkingsModule,
     ServicesModule,
     CoworkingServicesModule,
     CustomersModule,
+    SchedulesModule,
   ],
   controllers: [],
   providers: [AppService],
