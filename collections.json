@@ -1,0 +1,537 @@
+{
+	"info": {
+		"_postman_id": "ecb00bbf-2ebc-47cc-b845-fcacb1301487",
+		"name": "Coworkings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8720175"
+	},
+	"item": [
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/services",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/coworkings/c9545e66-65ed-4abe-ac39-e45c79bbff23/services/22299b8d-dfd2-447b-90c7-b4226123e894",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"c9545e66-65ed-4abe-ac39-e45c79bbff23",
+								"services",
+								"22299b8d-dfd2-447b-90c7-b4226123e894"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"coworking\": \"c9545e66-65ed-4abe-ac39-e45c79bbff23\",\n    \"service\": \"22299b8d-dfd2-447b-90c7-b4226123e894\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/services",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/coworkings/c9545e66-65ed-4abe-ac39-e45c79bbff23/services/22299b8d-dfd2-447b-90c7-b4226123e894",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"c9545e66-65ed-4abe-ac39-e45c79bbff23",
+								"services",
+								"22299b8d-dfd2-447b-90c7-b4226123e894"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms/10abde1f-ee2c-4dd0-93bd-9cd30f191313",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"rooms",
+								"10abde1f-ee2c-4dd0-93bd-9cd30f191313"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"-------------------------\",\n    \"value\": 123.94,\n    \"coworking\": \"adsjfasdjfapsdo-98fasd9\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"nome da sala -232\",\n    \"value\": 123.44\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms/22299b8d-dfd2-447b-90c7-b4226123e894",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"rooms",
+								"22299b8d-dfd2-447b-90c7-b4226123e894"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "complete",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"nome da sala -1 \",\n    \"value\": 123.44\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms/10abde1f-ee2c-4dd0-93bd-9cd30f191313",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"coworkings",
+										"adsjfasdjfapsdo-98fasd9",
+										"rooms",
+										"10abde1f-ee2c-4dd0-93bd-9cd30f191313"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "only title",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"nome da sala - 2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms/10abde1f-ee2c-4dd0-93bd-9cd30f191313",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"coworkings",
+										"adsjfasdjfapsdo-98fasd9",
+										"rooms",
+										"10abde1f-ee2c-4dd0-93bd-9cd30f191313"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "only value",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"value\": 888.23\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms/10abde1f-ee2c-4dd0-93bd-9cd30f191313",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"coworkings",
+										"adsjfasdjfapsdo-98fasd9",
+										"rooms",
+										"10abde1f-ee2c-4dd0-93bd-9cd30f191313"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9/rooms/208c039e-edae-4416-a2d7-a5953d3d5f7d",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9",
+								"rooms",
+								"208c039e-edae-4416-a2d7-a5953d3d5f7d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/coworkings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coworkings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coworkings",
+						"adsjfasdjfapsdo-98fasd9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nome do novo escritório - 4\",\n    \"active\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/coworkings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coworkings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"novo nome do coworking\",\n    \"active\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coworkings",
+						"adsjfasdjfapsdo-98fasd9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "complete",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"novo nome do coworking\",\n    \"active\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "only name",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"novo nome do coworking - 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "only active",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/coworkings/adsjfasdjfapsdo-98fasd9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coworkings",
+								"adsjfasdjfapsdo-98fasd9"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/coworkings/16f9a618-3cee-4810-8321-6a6e7e35a00e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"coworkings",
+						"16f9a618-3cee-4810-8321-6a6e7e35a00e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
