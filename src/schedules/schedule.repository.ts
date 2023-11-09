@@ -1,9 +1,8 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { DataSource } from 'typeorm';
 import { ScheduleEntity } from './schedule.entity';
 import { ScheduleCreateDto } from './dtos/scheduleCreate.dto';
 import { ScheduleUpdateDto } from './dtos/scheduleUpdate.dto';
-import { Alias } from 'typeorm/query-builder/Alias';
 
 @Injectable()
 export class ScheduleRepository {

@@ -1,4 +1,3 @@
-import { Logger } from '@nestjs/common';
 import { ScheduleEntity } from '../schedule.entity';
 import { CustomerResponseDto } from 'src/customers/dtos/customerResponse.dto';
 import { RoomResponseDto } from 'src/coworkings/rooms/dtos/roomResponse.dto';

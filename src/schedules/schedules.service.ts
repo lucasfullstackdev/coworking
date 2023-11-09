@@ -1,4 +1,4 @@
-import { Injectable, Logger, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { ScheduleRepository } from './schedule.repository';
 import { ScheduleDto } from './dtos/schedule.dto';
 import { ScheduleCreateDto } from './dtos/scheduleCreate.dto';
