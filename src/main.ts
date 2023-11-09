@@ -22,6 +22,7 @@ async function bootstrap() {
       'Coworking Rooms',
       'Gerencie as salas pertencentes ao seu coworking',
     )
+    .addTag('Customers', 'Gerencie os clientes do seu coworking')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
