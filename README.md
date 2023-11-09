@@ -22,52 +22,83 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+<br><br><br>
+
+<h1 align="center">API Coworking</h1>
+<h4 align="center">Uma API REST para gestão completa, rápida e segura de seu coworking</h4>
+
+## Sobre o projeto
+Este projeto tem como finalidade atestar meus conhecimentos nos seguintes pontos:
+ 
+- Desenvolvimento de aplicações [Node](http://nodejs.org)
+- Desenvolvimento de API's REST utilizando [Nest](https://github.com/nestjs/nest)
+- ORM [TypeOrm](https://orkhan.gitbook.io/typeorm/)
+- Arquitetura [DDD](https://medium.com/cwi-software/domain-driven-design-do-in%C3%ADcio-ao-c%C3%B3digo-569b23cb3d47)
+- Implementação de Camadas:
+	- [Repository](https://renicius-pagotto.medium.com/entendendo-o-repository-pattern-fcdd0c36b63b)
+	- [Service](https://davislevine.medium.com/service-design-patterns-930203c8df37)
+	- [Dto](https://medium.com/@orcunyilmazoy/the-dto-pattern-data-transfer-objects-8146b262636e)
+
+## Por que este projeto?
+- Este projeto faz parte do meu portfólio pessoal, uma maneira de comprovar meus conhecimentos em [Nest](https://github.com/nestjs/nest).
+- A construção de API's faz parte da rotina de um desenvolvedor back-end, então esse projeto serviu como uma simulação da rotina real de um desenvolvedor back-end atuando com [Nest](https://github.com/nestjs/nest).
+
+## Sobre a modelagem do Banco de Dados
+- O desafio consistia na construção de uma API REST utilizando Nest que permitisse o gerenciamento de recursos importantes para o rotina de um coworking.
+- Para o desafio foram criadas as seguintes tabelas:
+	
+| Table | Description |
+| ------------| --- |
+| coworkings | Contêm todos os coworkings |
+| services | Contêm todos os serviços passíveis de serem prestados pelos coworkings |
+| coworking_services | Contêm os servicços prestados por cada coworking |
+| rooms | Contêm as salas de cada coworking |
+| customers | Contêm todos os clientes |
+| schedules | Contêm todos os agendamentos |
+
+
+## Setup
+1. Clone o repositório
+2. Acesse a raíz do projeto. 
+3. Execute o comando:
 
 ```bash
 $ yarn install
 ```
-
-## Running the app
+4. Uma vez que as dependências tenham sido devidamente intaladas, você pode executar:
 
 ```bash
 # development
 $ yarn run start
+```
 
+```bash
 # watch mode
 $ yarn run start:dev
+```
 
+```bash
 # production mode
 $ yarn run start:prod
 ```
 
-## Test
+7. O projeto deve estar disponível no endereco: [localhost:3000/](http://localhost:3000/) 
 
-```bash
-# unit tests
-$ yarn run test
+## Observações importantes
+- É aconselhável que você tenha em sua máquina o [postman](https://www.postman.com/) para que possa fazer os devidos testes sobre as rotas disponíveis nesta API.
 
-# e2e tests
-$ yarn run test:e2e
+## Dependências e suas versões
+- [Node](https://nodejs.org/en) 20.6.1
+- [Npm](https://www.npmjs.com/) 9,8,1
+- [Yarn](https://yarnpkg.com/) 1.22.19
+- [MySQL](https://www.mysql.com/)
 
-# test coverage
-$ yarn run test:cov
-```
+## Observações importantes
+- Tenha as collections necessárias para testar [clicando aqui](https://github.com/lucasfullstackdev/coworking/blob/develop/collections.json)
+- Veja a documentação completa em [http://localhost:3000/api](http://localhost:3000/api)
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+## Considerações finais
+- API ainda passará por alterações, esta API não representa uma amostra real, devendo ser utilizada apenas para se ter uma noção sobre como funciona um API REST.
+- Qualquer dúvida ou sugestão, entre em contato pelo e-mail: lucas.fullstack.dev@gmail.com
